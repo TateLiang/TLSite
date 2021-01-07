@@ -1,0 +1,39 @@
+body {
+  background-color: #faf3dd;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #ff8a00
+}
+
+h3 {
+  color: #ff8a00
+}
+
+hr {
+  border-color: #d1d1d1;
+  border-style: dotted none none;
+  border-width: 5px;
+  height: 0px;
+  width: 10%;
+}
+
+img:hover {
+  background-color: white;
+}
+
+.stars {
+  background-color: #ffed00;
+}
+.fire {
+  background-color: red;
+}
+.circular {
+  border-radius: 100%;
+}
+
+#heading {
+  color: blue;
+}
