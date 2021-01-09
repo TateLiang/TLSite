@@ -20,20 +20,6 @@ hr {
   width: 10%;
 }
 
-img:hover {
-  background-color: white;
-}
-
-.stars {
-  background-color: #ffed00;
-}
-.fire {
-  background-color: red;
-}
-.circular {
-  border-radius: 100%;
-}
-
 /* Containers */
 
 .container-fluid {
@@ -41,37 +27,38 @@ img:hover {
 }
 
 /* Navigation Bar */
-
-.navbar {
-  padding: 0 0 4.5rem;
+#navigation-wrapper {
+  padding: 0.5rem 20px;
+  display: none;
 }
-
+.navbar {
+  padding: 5px 0 10px;
+}
+.navbar-nav {
+  padding: 15px 0;
+}
 .navbar-brand {
-  font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+  display: none;
 }
-
 .nav-item {
   padding: 0 18px;
 }
-
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+  font-family: 'Unbuntu';
 }
-
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: black;
 }
-.navbar-dark .navbar-brand {
+.navbar-light .navbar-brand {
   color: black;
 }
-
-.navbar-dark .navbar-nav > .nav-item > a:hover, .navbar-dark .navbar-nav > .nav-item > a:focus {
+.navbar-light .navbar-nav > .nav-item > a:hover, .navbar-dark .navbar-nav > .nav-item > a:focus {
     color: #7d7d7d;
 }
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+.navbar-light .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #7d7d7d;
 }
 
@@ -83,54 +70,47 @@ img:hover {
 #sidebar-wrapper {
   z-index: 1;
   position: absolute;
-  width: 0;
+  width: 150px;
   height: 100%;
   overflow-x: hidden;
-  background: #0098a2;
-  opacity: 0.9;
+  background: inherit;
 }
 
 /* Page Content */
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px;
-}
-
-/* Change the width of sidebar */
-#wrapper.menuDisplayed #sidebar-wrapper {
-  width: 250px;
-}
-
-#wrapper.menuDisplayed .container-fluid {
-  padding-left: 300px;
+  padding-left: 200px;
 }
 
 /* Sidebar styling */
 .sidebar-nav {
-  padding: 0;
+  padding: 3rem 0 0 0;
   list-style: none;
 }
 .sidebar-nav li {
-  text-indent: 20px;
+  text-indent: 40px;
   line-height: 40px;
 }
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
+  font-family: 'Crimson Text', serif;
   color: #000000;
 }
-.sidebar-nav li a:hover{
-  background: #16A085;
+.sidebar-nav li a:hover {
+  text-indent: 50px;
 }
 
 /* Small Screen size */
-
 @media (max-width:768px) {
   #sidebar-wrapper {
     width: 0px;
   }
-  #wrapper.menuDisplayed #sidebar-wrapper {
-    width: 100%;
+  #page-content-wrapper {
+    padding-left: 15%;
+  }
+  #navigation-wrapper {
+    display: block;
   }
 }
