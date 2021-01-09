@@ -4,12 +4,13 @@ body {
   text-align: left;
 }
 
-h1 {
-  color: #ff8a00
-}
-
 h3 {
-  color: #ff8a00
+  font-family: 'Roboto', serif;
+  font-weight: bold;
+}
+p {
+  font-family: 'Roboto', serif;
+
 }
 
 hr {
@@ -45,10 +46,23 @@ hr {
 .nav-item {
   padding: 0 18px;
 }
-.nav-link {
+.navbar-light .navbar-nav .nav-item .nav-link {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: block;
+  text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Unbuntu';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 45px;
+  color: #491a12;
 }
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7e7e;
+  color: #491a12;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
@@ -70,7 +84,7 @@ hr {
 #sidebar-wrapper {
   z-index: 1;
   position: absolute;
-  width: 150px;
+  width: 175px;
   height: 100%;
   overflow-x: hidden;
   background: inherit;
@@ -80,26 +94,38 @@ hr {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding-left: 200px;
+  padding-left: 225px;
 }
 
 /* Sidebar styling */
 .sidebar-nav {
-  padding: 3rem 0 0 0;
+  padding: 2rem 0 0 0;
   list-style: none;
 }
 .sidebar-nav li {
   text-indent: 40px;
-  line-height: 40px;
+  line-height: 35px;
 }
-.sidebar-nav li a {
+a.sidebar-option {
   display: block;
   text-decoration: none;
-  font-family: 'Crimson Text', serif;
-  color: #000000;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #491a12;
 }
-.sidebar-nav li a:hover {
-  text-indent: 50px;
+a.sidebar-option:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7e7e;
+}
+a.sidebar-heading {
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #491a12;
 }
 
 /* Small Screen size */
