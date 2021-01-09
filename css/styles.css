@@ -1,7 +1,7 @@
 body {
   background-color: #faf3dd;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
@@ -34,6 +34,103 @@ img:hover {
   border-radius: 100%;
 }
 
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-dark .navbar-brand {
+  color: black;
+}
+
+.navbar-dark .navbar-nav > .nav-item > a:hover, .navbar-dark .navbar-nav > .nav-item > a:focus {
+    color: #7d7d7d;
+}
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+    color: #7d7d7d;
+}
+
 #heading {
   color: blue;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+  z-index: 1;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background: #0098a2;
+  opacity: 0.9;
+}
+
+/* Page Content */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+/* Change the width of sidebar */
+#wrapper.menuDisplayed #sidebar-wrapper {
+  width: 250px;
+}
+
+#wrapper.menuDisplayed .container-fluid {
+  padding-left: 300px;
+}
+
+/* Sidebar styling */
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+.sidebar-nav li a:hover{
+  background: #16A085;
+}
+
+/* Small Screen size */
+
+@media (max-width:768px) {
+  #sidebar-wrapper {
+    width: 0px;
+  }
+  #wrapper.menuDisplayed #sidebar-wrapper {
+    width: 100%;
+  }
 }

@@ -4,82 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>Tate's Site</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/profile_img.jpg" alt="profile-image" height="200"></td>
 
-      <td>
-        <h1>Tate Liang</h1>
-        <p>
-          <em>Architecture Student, <strong><a href="https://www.cooper.edu">Cooper Union '25</a></strong></em>
-        </p>
-        <p>Descriptions</p>
-      </td>
+  <div id="wrapper">
 
-    </tr>
-  </table>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content-wrapper container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+          <h1>Sidebar Layout</h1>
+          <p>text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text </p>
+        </div>
+      </div>
+      <a href="hobbies.html">My Hobbies</a><br>
+      <a href="contact.html">Contact Me</a>
+    </div>
+
+  </div>
 
 
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>College, '25</li>
-    <li>Secondary, '20</li>
-  </ul>
+  <!-- Menu toggle script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("menuDisplayed");
+    });
+  </script>
 
-  <hr>
-  <h3 id="heading">Work Experience</h3>
-  <table cellspacing="10">
-
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-
-    <tr>
-      <td>2010-2013</td>
-      <td>Work1</td>
-    </tr>
-
-    <tr>
-      <td>2010</td>
-      <td>Work2</td>
-    </tr>
-
-  </table>
-
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Photoshop</td>
-      <td>⭐️⭐️⭐️⭐️⭐️</td>
-    </tr>
-    <tr>
-      <td>Illustrator</td>
-      <td>⭐️⭐️⭐️</td>
-    </tr>
-    <tr>
-      <td>iOS</td>
-      <td>⭐️⭐️⭐️⭐️</td>
-    </tr>
-  </table>
-
-  <hr>
-
-  <img class="stars" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/grinning-face-with-star-eyes_1f929.png" alt="">
-  <img class="fire circular" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/fire_1f525.png" alt="">
-
-  <hr>
-  <a href="hobbies.html">My Hobbies</a><br>
-  <a href="contact.html">Contact Me</a>
 
 </body>
 
