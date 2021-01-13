@@ -5,20 +5,20 @@ body {
 }
 
 h3 {
-  font-family: 'Roboto', serif;
+  font-family: 'Baskerville', serif;
   font-weight: bold;
+  color: #491a12;
 }
+
+h6 {
+  font-family: 'Roboto', serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #47302c;
+}
+
 p {
   font-family: 'Roboto', serif;
-
-}
-
-hr {
-  border-color: #d1d1d1;
-  border-style: dotted none none;
-  border-width: 5px;
-  height: 0px;
-  width: 10%;
 }
 
 /* Containers */
@@ -32,6 +32,7 @@ hr {
   padding: 0.5rem 20px;
   display: none;
 }
+
 .navbar {
   padding: 5px 0 10px;
 }
@@ -58,8 +59,7 @@ hr {
   color: #491a12;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #ff7e7e;
+  text-indent: 10px;
   color: #491a12;
 }
 
@@ -76,10 +76,6 @@ hr {
     color: #7d7d7d;
 }
 
-#heading {
-  color: blue;
-}
-
 /* Sidebar */
 #sidebar-wrapper {
   z-index: 1;
@@ -94,7 +90,7 @@ hr {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding-left: 225px;
+  padding-left: 250px;
 }
 
 /* Sidebar styling */
@@ -104,19 +100,18 @@ hr {
 }
 .sidebar-nav li {
   text-indent: 40px;
-  line-height: 35px;
+  line-height: 30px;
 }
 a.sidebar-option {
   display: block;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #491a12;
 }
 a.sidebar-option:hover {
-  text-decoration: underline;
-  text-decoration-color: #ff7e7e;
+  text-indent: 50px;
 }
 a.sidebar-heading {
   padding-bottom: 10px;
