@@ -98,20 +98,40 @@ p {
 
 /* Sidebar styling */
 .sidebar-nav {
+  --sidebar-option-height: 25px;
+  position: relative;
   padding: 3rem 0 0 3rem;
   list-style: none;
 }
 .sidebar-nav li {
   text-indent: 0px;
-  line-height: 25px;
+  line-height: var(--sidebar-option-height);
 }
-.sidebar-selection {
+
+.sidebar-indicator {
+  position: relative;
+  top: calc(-20px - (3 * var(--sidebar-option-height)));
   width: 8px;
   height: 15px;
+  margin-left: -15px;
   background-color: #000000;
 }
 
-a.sidebar-option {
+/* move indicator */
+.sidebar-nav .sidebar-option:nth-child(2):hover ~ .sidebar-indicator {
+  top: calc(-20px - (3 * var(--sidebar-option-height)));
+}
+.sidebar-nav .sidebar-option:nth-child(3):hover ~ .sidebar-indicator {
+  top: calc(-20px - (2 * var(--sidebar-option-height)));
+}
+.sidebar-nav .sidebar-option:nth-child(4):hover ~ .sidebar-indicator {
+  top: calc(-20px - (1 * var(--sidebar-option-height)));
+}
+.sidebar-nav .sidebar-option:nth-child(5):hover ~ .sidebar-indicator {
+  top: -20px;
+}
+
+a.sidebar-link {
   display: block;
   text-decoration: none;
   font-size: 1.2rem;
@@ -119,9 +139,10 @@ a.sidebar-option {
   font-weight: lighter;
   color: black;
 }
-a.sidebar-option:hover {
+/*
+a.sidebar-link:hover {
   text-indent: 10px;
-}
+}*/
 a.sidebar-heading {
   padding-bottom: 20px;
   display: block;
