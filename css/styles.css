@@ -1,5 +1,8 @@
+@font-face { font-family: 'SF-Compact'; font-weight: lighter; src: url('../fonts/SF-Compact-Text-Light.otf'); }
+@font-face { font-family: 'SF-Compact'; font-weight: bold; src: url('../fonts/SF-Compact-Text-Bold.otf');}
+
 body {
-  background-color: #faf3dd;
+  background-color: #ffffff;
   margin: 0;
   text-align: left;
 }
@@ -7,14 +10,14 @@ body {
 h3 {
   font-family: 'Baskerville', serif;
   font-weight: bold;
-  color: #491a12;
+  color: #000000;
 }
 
 h6 {
-  font-family: 'Roboto', serif;
-  font-weight: normal;
+  font-family: 'SF-Compact', sans-serif;
+  font-weight: lighter;
   font-size: 0.9rem;
-  color: #47302c;
+  color: #000000;
 }
 
 p {
@@ -53,14 +56,14 @@ p {
   display: block;
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'SF-Compact', sans-serif;
   font-weight: 300;
   line-height: 45px;
-  color: #491a12;
+  color: black;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
   text-indent: 10px;
-  color: #491a12;
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -76,6 +79,13 @@ p {
     color: #7d7d7d;
 }
 
+/* Page Content */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding-left: 250px;
+}
+
 /* Sidebar */
 #sidebar-wrapper {
   z-index: 1;
@@ -86,41 +96,40 @@ p {
   background: inherit;
 }
 
-/* Page Content */
-#page-content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding-left: 250px;
-}
-
 /* Sidebar styling */
 .sidebar-nav {
-  padding: 2rem 0 0 0;
+  padding: 3rem 0 0 3rem;
   list-style: none;
 }
 .sidebar-nav li {
-  text-indent: 40px;
-  line-height: 30px;
+  text-indent: 0px;
+  line-height: 25px;
 }
+.sidebar-selection {
+  width: 8px;
+  height: 15px;
+  background-color: #000000;
+}
+
 a.sidebar-option {
   display: block;
   text-decoration: none;
-  font-size: 0.85rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #491a12;
+  font-size: 1.2rem;
+  font-family: 'SF-Compact', sans-serif;
+  font-weight: lighter;
+  color: black;
 }
 a.sidebar-option:hover {
-  text-indent: 50px;
+  text-indent: 10px;
 }
 a.sidebar-heading {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: block;
   text-decoration: none;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-family: 'SF-Compact', sans-serif;
   font-weight: bold;
-  color: #491a12;
+  color: black;
 }
 
 /* Small Screen size */
