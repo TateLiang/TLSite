@@ -14,6 +14,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sidebar-styles.css">
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,41 +23,15 @@
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  <!-- Navigation -->
-  <div id="navigation-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light">
-
-      <a class="navbar-brand" href="">Title</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-        </ul>
-
-      </div>
-    </nav>
-  </div>
-
-  <!-- Sidebar -->
-  <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-option"><a class="sidebar-heading" href="#">TATE LIANG</a></li>
-      <li class="sidebar-option"><a class="sidebar-link" href="#">home</a></li>
-      <li class="sidebar-option"><a class="sidebar-link" href="#projects">projects</a></li>
-      <li class="sidebar-option"><a class="sidebar-link" href="#about">about</a></li>
-      <li class="sidebar-option"><a class="sidebar-link" href="pages/contact.html">contact</a></li>
-      <div class="sidebar-indicator"></div>
-    </ul>
-  </div>
+  <!-- Sidebar from separate html file-->
+  <div id="sidebar-placeholder"></div>
+  <script>
+  $(function(){
+    $("#sidebar-placeholder").load("pages/sidebar.html");
+  });
+  </script>
 
   <!-- Page Content -->
   <div id="page-content-wrapper" class="container-fluid">
@@ -69,8 +44,6 @@
         <p>test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo ligula, suscipit tincidunt mattis non, posuere quis orci. Aliquam suscipit, libero in hendrerit mollis, magna est ornare mauris, a suscipit sapien urna sit amet velit. Cras convallis, tortor nec cursus sodales, lorem velit ultricies nibh, eu tristique libero tellus eget sapien. Integer laoreet viverra pharetra. Aliquam efficitur enim sed erat egestas pellentesque. Ut vel ultricies nisl. Maecenas in urna quis sem porta maximus vel vitae sem. Donec hendrerit, nibh sit amet finibus fermentum, lacus mauris finibus purus, a aliquet nisi nisl sit amet lacus. Mauris imperdiet nulla id ex volutpat condimentum. Vivamus eget ultricies eros. Duis in interdum urna. In sollicitudin bibendum congue. Suspendisse potenti. Nunc vitae dolor ultrices, viverra velit quis, condimentum diam. Mauris eleifend leo ut pharetra consequat. Mauris tincidunt libero tristique orci hendrerit, vel consectetur eros porta.</p>
       </div>
     </div>
-    <a href="hobbies.html">My Hobbies</a><br>
-    <a href="contact.html">Contact Me</a>
   </div>
 
   <!-- Menu toggle script -->
