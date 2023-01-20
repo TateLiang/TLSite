@@ -26,19 +26,36 @@ p {
 
 /* Containers */
 .container-fluid {
-  padding: 7% 15%;
+  padding: 0% 0%;
 }
 
 /* Page Content */
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding-left: 250px;
+}
+
+.row-1 {
+  display: flex;
+  align-items: top;
+  justify-content: right;
+  min-height: 500px;
+  padding: 3rem 3rem 3rem 230px;
+  background-color: #b38665;
+}
+.row-2 {
+  display: flex;
+  align-items: top;
+  justify-content: right;
+  min-height: 500px;
+  padding: 3rem 3rem 3rem 230px;
+  background-color: #ffffff;
 }
 
 /* Small Screen size */
-@media (max-width:768px) {
-  #page-content-wrapper {
-    padding-left: 15%;
+@media only screen and (max-width:667px) {
+  .row-1 {
+    padding-left: 3rem;
+    padding-top: 5rem;
   }
 }

@@ -5,6 +5,7 @@
 #navigation-wrapper {
   padding: 0.5rem 20px;
   display: none;
+  z-index: 100;
 }
 
 .navbar {
@@ -58,12 +59,13 @@
   height: 100%;
   overflow-x: hidden;
   background: inherit;
+  z-index:100;
 }
 
 /* Sidebar styling */
 .sidebar-nav {
   --sidebar-option-height: 25px;
-  position: relative;
+  position: fixed;
   padding: 3rem 0 0 3rem;
   list-style: none;
 }
@@ -103,10 +105,12 @@ a.sidebar-link {
   font-weight: lighter;
   color: black;
 }
+
 /*
 a.sidebar-link:hover {
   text-indent: 10px;
 }*/
+
 a.sidebar-heading {
   padding-bottom: 20px;
   display: block;
@@ -117,11 +121,12 @@ a.sidebar-heading {
   color: black;
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width:667px) {
   #sidebar-wrapper {
     width: 0px;
   }
   #navigation-wrapper {
+    position: absolute;
     display: block;
   }
 }
