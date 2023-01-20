@@ -3,16 +3,17 @@
 
 /* Navigation Bar */
 #navigation-wrapper {
-  padding: 0.5rem 20px;
+  background-color: #b38665;
+  padding: 0.8rem 3rem;
   display: none;
-  z-index: 100;
+  z-index: 1;
 }
 
 .navbar {
-  padding: 5px 0 10px;
+  padding: 5px 0;
 }
 .navbar-nav {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .navbar-brand {
   font-size: 2.5rem;
@@ -20,7 +21,8 @@
   display: none;
 }
 .nav-item {
-  padding: 0 18px;
+  background-color: #b38665;
+  padding: 0 13px;
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
   padding-top: 0px;
@@ -34,7 +36,7 @@
   color: black;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  text-indent: 10px;
+  text-indent: 0px;
   color: black;
 }
 
@@ -50,11 +52,29 @@
 .navbar-light .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #7d7d7d;
 }
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  background-color: none;
+  border:none;
+  outline:none;
+}
+.navbar-toggler:focus {
+  outline:none;
+}
+.navbar-toggler .navbar-toggler-line{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+}
+
 
 /* Sidebar */
 #sidebar-wrapper {
-  z-index: 1;
-  position: absolute;
+  position: fixed;
   width: 175px;
   height: 100%;
   overflow-x: hidden;
@@ -65,7 +85,6 @@
 /* Sidebar styling */
 .sidebar-nav {
   --sidebar-option-height: 25px;
-  position: fixed;
   padding: 3rem 0 0 3rem;
   list-style: none;
 }
@@ -126,7 +145,7 @@ a.sidebar-heading {
     width: 0px;
   }
   #navigation-wrapper {
-    position: absolute;
+    position: relative;
     display: block;
   }
 }
