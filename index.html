@@ -17,15 +17,12 @@
   <link rel="stylesheet" href="css/sidebar-styles.css">
 
   <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
   <!-- Sidebar from separate html file-->
   <div id="sidebar-placeholder"></div>
   <script>
@@ -36,9 +33,11 @@
 
   <!-- Page Content -->
   <div id="page-content-wrapper" class="container-fluid">
-    <div class="row-1">
+
+
+    <div class="row-section row-1">
       <div class="carousel-indicator">
-        <div id="myArrow" class="carousel-arrow"></div>
+        <div class="carousel-arrow"></div>
         <p class="carousel-numbers">1 2 3 4 5 6 7 8 9</p>
       </div>
 
@@ -63,10 +62,9 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
     </div>
 
-    <div class="row-2">
+    <div class="row-section row-2">
       <div class="col-lg-12">
         <h3>Work in Progress</h3>
         <h6>July 17th, 2019</h6>
@@ -77,46 +75,14 @@
 
   </div>
 
-  <!-- Menu toggle script -->
-  <!-- <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("menuHidden");
-    });
-  </script> -->
-
-
   <script>
-
-
     $(document).ready(function (){
-      var carouselIndex = 0;
-      var carouselArrow = document.getElementById("myArrow");
-      var maxMargin = 1.11 * 8;
-      carouselArrow.style.marginLeft = 0;
-
-      document.getElementById("carousel-next-button").onclick = function() {
-        if (parseFloat(carouselArrow.style.marginLeft) >= maxMargin) {
-          carouselArrow.style.marginLeft = "0rem";
-        }else {
-          carouselArrow.style.marginLeft = parseFloat(carouselArrow.style.marginLeft) + 1.11 + "rem";
-        }
-      };
-      document.getElementById("carousel-prev-button").onclick = function() {
-        if (parseFloat(carouselArrow.style.marginLeft) <= 0) {
-          carouselArrow.style.marginLeft = maxMargin + "rem";
-        }else {
-          carouselArrow.style.marginLeft = parseFloat(carouselArrow.style.marginLeft) - 1.11 + "rem";
-        }
-      };
-
-      $(function(){
-        $("#carousel-big").on('slide.bs.carousel', function () {
-          alert("wefe");
-        });
+      $("#carousel-big").on('slide.bs.carousel', function (e) {
+        document.querySelector(".carousel-arrow").style.marginLeft = e.to * 1.11 + "em";
       });
-
     });
+
+
   </script>
 </body>
 

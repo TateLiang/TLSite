@@ -79,7 +79,7 @@
   height: 100%;
   overflow-x: hidden;
   background: inherit;
-  z-index:100;
+  z-index:1;
 }
 
 /* Sidebar styling */
@@ -99,7 +99,6 @@
   width: 8px;
   height: 15px;
   margin-left: -15px;
-  transition: all .3s ease;
   background-color: #000000;
 }
 
@@ -124,6 +123,7 @@ a.sidebar-link {
   font-family: 'SF-Compact', sans-serif;
   font-weight: lighter;
   color: black;
+  z-index:100;
 }
 
 /*

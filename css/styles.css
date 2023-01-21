@@ -47,10 +47,12 @@ p {
   display: flex;
   align-items: top;
   justify-content: flex-end;
-  min-height: 500px;
+  min-height: 1000px;
   padding: 3rem 3rem 3rem 230px;
   background-color: #ffffff;
 }
+
+
 
 /* Carousel */
 #carousel-big {
