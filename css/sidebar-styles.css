@@ -1,5 +1,5 @@
-@font-face { font-family: 'SF-Compact'; font-weight: lighter; src: url('../fonts/SF-Compact-Text-Light.otf'); }
-@font-face { font-family: 'SF-Compact'; font-weight: bold; src: url('../fonts/SF-Compact-Text-Bold.otf');}
+@font-face { font-family: 'SF-Compact'; font-weight: lighter; src: url('fonts/SF-Compact-Text-Light.otf'); }
+@font-face { font-family: 'SF-Compact'; font-weight: bold; src: url('fonts/SF-Compact-Text-Bold.otf');}
 
 /* Navigation Bar */
 #navigation-wrapper {
@@ -99,6 +99,7 @@
   width: 8px;
   height: 15px;
   margin-left: -15px;
+  transition: all .3s ease;
   background-color: #000000;
 }
 

@@ -1,5 +1,6 @@
-@font-face { font-family: 'SF-Compact'; font-weight: lighter; src: url('../fonts/SF-Compact-Text-Light.otf'); }
-@font-face { font-family: 'SF-Compact'; font-weight: bold; src: url('../fonts/SF-Compact-Text-Bold.otf');}
+@font-face { font-family: 'SF-Compact'; font-weight: lighter; src: url('fonts/SF-Compact-Text-Light.otf'); }
+@font-face { font-family: 'SF-Compact'; font-weight: bold; src: url('fonts/SF-Compact-Text-Bold.otf');}
+@font-face { font-family: 'SF-Mono'; font-weight: lighter; src: url('fonts/SF-Mono-Light.otf');}
 
 body {
   background-color: #ffffff;
@@ -37,19 +38,60 @@ p {
 
 .row-1 {
   display: flex;
-  align-items: top;
-  justify-content: right;
-  min-height: 500px;
+  flex-direction: column;
+  align-items: flex-end;
   padding: 3rem 3rem 3rem 230px;
   background-color: #b38665;
 }
 .row-2 {
   display: flex;
   align-items: top;
-  justify-content: right;
+  justify-content: flex-end;
   min-height: 500px;
   padding: 3rem 3rem 3rem 230px;
   background-color: #ffffff;
+}
+
+/* Carousel */
+#carousel-big {
+  display: block;
+  width: 600px;
+  height: auto;
+  max-width:100%;
+  clear:both;
+}
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+  background-image: none;
+}
+.carousel .carousel-control-next-icon:before {
+  font-size: 1.25rem;
+  content: "→";
+}
+.carousel .carousel-control-prev-icon:before {
+  font-size: 1.25rem;
+  content: "←";
+}
+.carousel-indicator {
+  display: block;
+  height: 40px;
+  padding-right: 5px;
+  width: auto;
+}
+.carousel-numbers {
+  font-family: 'SF-Mono', sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 50%;
+  text-align: right;
+}
+.carousel-arrow {
+  width: 8px;
+  height: 3px;
+  background-color: white;
+  transition: all .3s ease;
+  margin-left: 0;
+  opacity: 50%;
 }
 
 /* Small Screen size */
