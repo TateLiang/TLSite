@@ -49,10 +49,8 @@ p {
   justify-content: flex-end;
   min-height: 1000px;
   padding: 3rem 3rem 3rem 230px;
-  background-color: #ffffff;
+  background-color: black;
 }
-
-
 
 /* Carousel */
 #carousel-big {
