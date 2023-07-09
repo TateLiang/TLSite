@@ -80,7 +80,11 @@ function updateText(index) {
       summary.innerHTML = "Environments / Fall 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor Lydia Kallipoliti<br>Group Project with Evan Chiang, Arthur Lee";
       break;
     case 16:
-    	title.innerHTML = "";
+    	title.innerHTML = "IKEA Carbon Form";
+      summary.innerHTML = "Environments / Spring 2022<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor Elisa Iturbe<br>Group project with Sofia Mercado, Evan Chiang, Zelda Liu<br><br>The worldwide ready-to-assemble furniture company IKEA has seamlessly integrated itself into mass culture. From the parking lot, showroom, and warehouse, IKEA as a big-box store assembles the three typologies in a choreographed sequence to promote consumption. <br><br>An analysis of its urban context reveals that IKEA acts as a passive carbon form by privileging private transportation.  IKEA plays into the current energy paradigm through its spatial and economic configuration.";
+      break;	  
+    case 17:
+    	title.innerHTML = "Solar Decathlon";
       summary.innerHTML = "";
       break;
     case 100:
