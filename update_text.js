@@ -23,7 +23,7 @@ function updateText(index) {
   switch (i) {
   	case 2: case 6:
     	title.innerHTML = "Convergent Housing";
-    	summary.innerHTML = "Integrated Housing Studio / Spring 2023 <br>–––––––––––––––––––––––––––––––––––––––––––––– <br>Baltimore, Maryland <br>Mersiha Veledar, Daisy Ames, Nader Tehrani <br><br>Convergent living proposes a new typology that redefines unit boundaries and linkages between tight communities, within a larger connected complex. The perimeter condition punctured by openings invites public program and events to the block interior. Traditional double-loaded circulatory spines transform into activity spaces through enlarged public areas and vertical cuts that allow natural light and views.<br><br>A new concept where units are linked by balconies capture multigenerational and complex human relations, allowing connection while retaining privacy. A continuous public promenade also spirals sectionally through every building, leading residents to a central public volume.";;
+    	summary.innerHTML = "Integrated Housing Studio / Spring 2023 <br>–––––––––––––––––––––––––––––––––––––––––––––– <br>Baltimore, Maryland <br>Mersiha Veledar, Daisy Ames, Nader Tehrani <br><br>Convergent living proposes a new typology that redefines unit boundaries and linkages between tight communities, within a larger connected complex. The perimeter condition punctured by openings invites public program and events to the block interior. Traditional double-loaded circulatory spines transform into activity spaces through enlarged public areas and vertical cuts that allow natural light and views.<br><br>A new concept where units are linked by balconies capture multigenerational and complex human relations, allowing connection while retaining privacy. A continuous public promenade also spirals sectionally through every building, leading residents to a central public volume.";
     	break;
     case 4: case 8:
     	title.innerHTML = "Exquisite Corpse";
@@ -85,7 +85,7 @@ function updateText(index) {
       break;	  
     case 17:
     	title.innerHTML = "Solar Decathlon";
-      summary.innerHTML = "";
+      summary.innerHTML = "US Department of Energy Solar Decathlon<br>New York Harbour School Expansion & Renovation<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Advisors Nader Tehrani, Pamela Cabrera, Julian Palacio<br>Team: Ji Yong Chung, Shannagh Crowe, Lionel Gilliar-Schoenenberger, Sophia Zhao, Benny Wu, Larry Zeng, Sarah Coraizaca, Samantha Wu, Mizanul Hoque, Amelia Roopnarine<br><br>Our project to expand the New York Harbour school on Governor’s Island focuses on enhancing its unique location and martime-focused education. The proposal creates new community space, circulation and connection to the campus through sculpted landscapes, public volumes and paths. We reach a net-zero design by integrating photovoltaic panels, mindful reuse of construction material, a green roof, geothermal energy piles, a rainwater capture system and other technologies. We also carefully consider flood levels and climate conditions through design in section, plant selection and structural innovations such as the bathtub style foundation to create a resilient campus. ";
       break;
     case 100:
     	title.innerHTML = "";
