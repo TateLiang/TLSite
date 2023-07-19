@@ -1,1 +1,1 @@
-# tateliang.github.io
+# tateliang.com
