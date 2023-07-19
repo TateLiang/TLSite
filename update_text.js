@@ -31,7 +31,7 @@ function updateText(index) {
       	break;
     case 1: case 5:
     	title.innerHTML = "Ritual Space";
-    	summary.innerHTML = "A space for contemplation and meditation hovers between ground and sky. Openings folded into the roof and soft depressions imprinted into earth serve to redivide program by replacing rigid planimetric walls with sectional compression and expansion. The result is an equilibrium at the intersection of vertical forces and the surrounding horizon.<br><br>Approaching the building begins by a descent from surrounding landscape into a recessed area which serves to narrow the building’s profile. The path then traverses a nonconforming ground condition complemented by the roof’s uniform rigidity, and leads to a sculpted entrance surrounded by vegetation.";
+    	summary.innerHTML = "Design II / Spring 2022<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Freshkills Park, New York City<br>Professor Michael Young<br><br>A space for contemplation and meditation hovers between ground and sky. Openings folded into the roof and soft depressions imprinted into earth serve to redivide program by replacing rigid planimetric walls with sectional compression and expansion. The result is an equilibrium at the intersection of vertical forces and the surrounding horizon.<br><br>Approaching the building begins by a descent from surrounding landscape into a recessed area which serves to narrow the building’s profile. The path then traverses a nonconforming ground condition complemented by the roof’s uniform rigidity, and leads to a sculpted entrance surrounded by vegetation.";
 	break;
     case 0:
     	title.innerHTML = "Spatial Morph";
