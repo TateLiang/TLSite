@@ -73,7 +73,7 @@ function updateText(index) {
 	break;
     case 10:
     	title.innerHTML = "Descriptive Geometry";
-      	summary.innerHTML = "Spring 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor James Lowder<br><br>Rotations, intersections, boolean operations, deformations and movement can be captured by descriptive geometry. Critical analyses of architecture, objects, and perception are be produced through hand-drawn, graphic calculation techniques.";
+      	summary.innerHTML = "Spring 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor James Lowder<br><br>Rotations, intersections, boolean operations, deformations and movement can be captured by descriptive geometry. Critical analyses of architecture, objects, and perception are produced through hand-drawn, graphic calculation techniques.";
       	break;
     case 15:
     	title.innerHTML = "Modular Habitat";
