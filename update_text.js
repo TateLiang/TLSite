@@ -17,7 +17,7 @@ function updateText(index) {
   
   //update title font to default (large)
   title.style.fontSize = "5.5vw";
-  title.style.lineHeight = "5.5vw";
+  title.style.lineHeight = "5vw";
   
   //change sidebar text
   switch (i) {
