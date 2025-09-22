@@ -14,10 +14,6 @@ function updateText(index) {
 	const summary = document.querySelector(".summary_home");
 	const textRight = document.querySelector(".text_right");
 
-  //update title font to default (large)
-  title.style.fontSize = "1.3vw";
-  title.style.lineHeight = "1.35vw";
-
   //change sidebar text
   switch (index) {
 		case "living-large":
