@@ -84,7 +84,7 @@ function updateText(index) {
 		case "descriptive-geometry":
 			textRight.innerHTML = "14";
 			title.innerHTML = "Descriptive Geometry";
-			summary.innerHTML = "Spring 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor James Lowder<br><br>Spring 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor James Lowder<br><br>Descriptive geometry is a hand-drawn graphic calculation technique that captures rotation, intersection, deformation and movement to produce analyses of architecture, objects, and perception.<br><br>‍Top to bottom: 1) Rotation and return of geometry using spherical trigonometry methods, 2) Intersection of a Toblerone and its box, 3) Graphically calculated stages of opening an umbrella, 4) Fosbury Flop interpolation 5) Parallel line composition 6) Multiplication of two curves to form a resultant 7) SANAA Glass Pavilion 8) Cheese intersection 9) Rotation 10) Cheese intersection 2.0";
+			summary.innerHTML = "Spring 2021<br>––––––––––––––––––––––––––––––––––––––––––––––<br>Professor James Lowder<br><br>Descriptive geometry is a hand-drawn graphic calculation technique that captures rotation, intersection, deformation and movement to produce analyses of architecture, objects, and perception.<br><br>‍Top to bottom: 1) Rotation and return of geometry using spherical trigonometry methods, 2) Intersection of a Toblerone and its box, 3) Graphically calculated stages of opening an umbrella, 4) Fosbury Flop interpolation 5) Parallel line composition 6) Multiplication of two curves to form a resultant 7) SANAA Glass Pavilion 8) Cheese intersection 9) Rotation 10) Cheese intersection 2.0";
 			break;
 		case "solar-decathlon":
 			textRight.innerHTML = "15";
